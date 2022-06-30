@@ -1,0 +1,178 @@
+.footer {
+    background-color: var(--hero-footer-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-adress {
+    width: 231px;
+    &__location {
+            margin-top: 20px;
+            margin-bottom: 9px;
+
+            @include font(14px, null, 1.71);
+            letter-spacing: 0.03em;
+            color: var(--header-background-color);
+            font-style: normal;
+        }
+}
+
+.logo--footer-color {
+    color: var(--header-background-color);
+}
+
+.footer-list {
+    list-style: none;
+    &__mail {
+            @include font(14px, null, 1.71);
+
+            letter-spacing: 0.03em;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.6);
+        }
+    
+        &__tel {
+            @include font(14px, null, 1.71);
+
+            letter-spacing: 0.03em;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.6);
+        }
+    
+    
+        &__item {
+            margin-bottom: 9px;
+    
+        }
+}
+
+
+
+.join-list__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+}
+
+.container-join {
+    width: 206px;
+    margin-left: 70px;
+    &__text {
+        @include font(14px, 700, 1.14);
+
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: var(--header-background-color);
+        }
+}
+
+
+
+.join-list__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        background-color: #2196F3;
+        }
+    
+    &:focus {
+        background-color: #2196F3;
+        outline: transparent;
+        }
+}
+
+
+
+.join-list__icon {
+    fill: var(--header-background-color);
+}
+
+.form-subscribe__container {
+    display: flex;
+    margin-top: 20px;
+
+    height: 50px;
+    margin-left: 93px;
+}
+
+.form-subscribe__label {
+    display: flex;
+
+    @include font(14px, 700, 1.14);
+
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--header-background-color)
+}
+
+.form-subscribe__input {
+
+    padding-left: 16px;
+    width: 358px;
+
+    @include font(16px, null, 1.25);
+
+    letter-spacing: 0.03em;
+    color: var(--header-background-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: var(--hero-footer-background-color);
+
+}
+
+.form-subscribe__input::placeholder {
+    @include font(16px, null, 1.25);
+
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.form-subscribe__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-left: 12px;
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    border-radius: 4px;
+    border: none;
+
+    @include font(16px, 700, 1.88);
+
+    letter-spacing: 0.06em;
+    color: var(--header-background-color);
+    cursor: pointer;
+}
+
+.form-subscribe__button:hover,
+.form-subscribe__button:focus {
+    background-color: #188CE8;
+}
+
+.form-subscribe__text {
+    margin-left: 93px;
+
+    @include font(14px, 700, 1.14);
+
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--header-background-color);
+}
+
+.form-subscribe__icon {
+    margin-left: 10px;
+}

@@ -1,0 +1,12 @@
+.logo {
+    @include font(26px, null, 1.19);
+    font-family: 'Raleway';
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    
+    &__web {
+        @extend .logo;
+        color: #2196F3;
+        }
+}
+

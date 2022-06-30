@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/main.min.css">
+</head>
+
+<body>
+    <!--Шапка сайта-->
+<header class="section-header">
+    <div class="container section-header__container">
+        <a href="./index.html" lang="en" class="logo logo--header-color section-header__logo">
+            <span class="logo__web">Web</span>Studio
+        </a>
+        <nav>
+            <div>
+                <ul class="header-list structure__header-list">
+                    <li class="header-list__item"> <a class="header-list__link" href="./index.html">Студия</a>
+                    </li>
+                    <li class="header-list__item"> <a class="header-list__link current" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="header-list__item"> <a class="header-list__link" href="">Контакты</a></li>
+                </ul>
+            </div>
+
+        </nav>
+        <ul class="contact-list structure__contact-list">
+            <li>
+                <a class="contact-list__mail" href="mailto:info@devstudio.com">info@devstudio.com
+                    <svg class="contact-list__icon" width="16" height="12">
+                        <use href="./images/icons.svg#icon-mail"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="contact-list__tel" href="tel:+380961111111">+38 096 111 11 11
+                    <svg class="contact-list__icon" width="10" height="16">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
+    <!--Мейн сайта-->
+    <main>
+        
+        <!--Cписок проектов.-->
+
+        <section class="section-projects">
+            <div class="container ">
+                <ul class="btn-list">
+                    <li class="btn-list__item"><button type="button" class="btn-list__button">Все</button></li>
+                    <li class="btn-list__item"><button type="button" class="btn-list__button">Веб-сайты</button></li>
+                    <li class="btn-list__item"><button type="button" class="btn-list__button">Приложения</button></li>
+                    <li class="btn-list__item"><button type="button" class="btn-list__button">Дизайн</button></li>
+                    <li class="btn-list__item"><button type="button" class="btn-list__button">Маркетинг</button></li>
+                </ul>
+                <h1 class="visually-hidden">Список проектов</h1>
+                <ul class="project-list">
+                    <li class="project-list__item">
+                        <div class="project-wrap">
+                            <img src="./images/image-8.jpg" alt="Пример веб-сайта" width="370" height="294">
+                            <p class="project-wrap__text">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                получить
+                                исчерпывающие сведения о компании или частном лице
+                            </p>
+                        </div>
+                        <div class="section-text-card">
+                            <h2 class="section-text-card__title">Технокряк</h2>
+                            <p class="section-text-card__work">Веб-сайт</p>
+                        </div>
+                     </li>
+                    <li class="project-list__item">
+                        <div class="project-wrap">
+                            <img src="./images/image-9.jpg" alt="Пример дизайна постера" width="370" height="294">
+                            <p class="project-wrap__text">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                получить
+                                исчерпывающие сведения о компании или частном лице
+                            </p>
+                        </div>
+                        <div class="section-text-card">
+                            <h2 class="section-text-card__title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                            <p class="section-text-card__work">Дизайн</p>
+                        </div>
+                    </li>
+                    <li class="project-list__item">
+                        <div class="project-wrap">
+                            <img src="./images/image-10.jpg" alt="Пример приложения ресторана" width="370" height="294">
+                            <p class="project-wrap__text">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                получить
+                                исчерпывающие сведения о компании или частном лице
+                            </p>
+                        </div>
+                        <div class="section-text-card">
+                            <h2 class="section-text-card__title">Ресторан <span lang="en">Seafood</span></h2>
+                            <p class="section-text-card__work">Приложение</p>
+                        </div>
+                    </li>
+                    <li class="project-list__item">
+                        <div class="project-wrap">
+                            <img src="./images/image-11.jpg" alt="Пример маркетинга" width="370" height="294">
+                            <p class="project-wrap__text">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                получить
+                                исчерпывающие сведения о компании или частном лице
+                            </p>
+                        </div>
+                        <div class="section-text-card">
+                            <h2 class="section-text-card__title">Проект <span lang="en">Prime</span></h2>
+                            <p class="section-text-card__work">Маркетинг</p>
+                        </div>
+                    </li>
+                    <li class="project-list__item">
+                        <div class="project-wrap">
+                            <img src="./images/image-12.jpg" alt="Пример приложения" width="370" height="294">
+                            <p class="project-wrap__text">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                получить
+                                исчерпывающие сведения о компании или частном лице
+                            </p>
+                        </div>
+                        <div class="section-text-card">
+                            <h2 class="section-text-card__title">Проект <span lang="en">Boxes</span></h2>
+                            <p class="section-text-card__work">Приложение</p>
+                        </div>
+                    </li>
+                    <li class="project-list__item">
+                        <div class="project-wrap">
+                            <img src="./images/image-13.jpg" alt="Пример веб-сайта" width="370" height="294">
+                            <p class="project-wrap__text">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                получить
+                                исчерпывающие сведения о компании или частном лице
+                            </p>
+                        </div>
+                        <div class="section-text-card">
+                            <h2 class="section-text-card__title" lang="en">Inspiration has no Borders</h2>
+                            <p class="section-text-card__work">Веб-сайт</p>
+                        </div>
+                    </li>
+                    <li class="project-list__item">
+                        <div class="project-wrap">
+                            <img src="./images/image-14.jpg" alt="Пример дизайна издания" width="370" height="294">
+                            <p class="project-wrap__text">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                получить
+                                исчерпывающие сведения о компании или частном лице
+                            </p>
+                        </div>
+                        <div class="section-text-card"><h2 class="section-text-card__title">Издание <span lang="en">Limited Edition</span></h2>
+                        <p class="section-text-card__work">Дизайн</p>
+                        </div>
+                    </li>
+                    <li class="project-list__item">
+                        <div class="project-wrap">
+                            <img src="./images/image-15.jpg" alt="Пример маркетинга" width="370" height="294">
+                            <p class="project-wrap__text">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                получить
+                                исчерпывающие сведения о компании или частном лице
+                            </p>
+                        </div>
+                       <div class="section-text-card">
+                            <h2 class="section-text-card__title">Проект <span lang="en">LAB</span></h2>
+                            <p class="section-text-card__work">Маркетинг</p>
+                       </div>
+                    </li>
+                    <li class="project-list__item">
+                        <div class="project-wrap">
+                            <img src="./images/image-16.jpg" alt="Пример приложения" width="370" height="294">
+                            <p class="project-wrap__text">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                получить
+                                исчерпывающие сведения о компании или частном лице
+                            </p>
+                        </div>
+                        <div class="section-text-card">
+                            <h2 class="section-text-card__title" lang="en">Growing Business</h2>
+                            <p class="section-text-card__work">Приложение</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+    </main>
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer-adress">
+                    <a href="./index.html" lang="en" class="logo logo--footer-color">
+                        <span class="logo__web">Web</span>Studio
+                    </a>
+                    <address class="footer-adress__location">г. Киев, пр-т Леси Украинки, 26</address>
+                    <ul class="footer-list">
+                        <li class="footer-list__item"><a class="footer-list__mail"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="footer-list__item"><a class="footer-list__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container-join">
+                    <p class="container-join__text">Присоединяйтесь</p>
+                    <ul class="join-list">
+                        <li class="join-list__item">
+                            <a class="join-list__link" href="https://www.instagram.com/">
+                                <svg class="join-list__icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-instagram-2">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join-list__item">
+                            <a class="join-list__link" href="">
+                                <svg class="join-list__icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-twitter-1">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join-list__item">
+                            <a class="join-list__link" href="">
+                                <svg class="join-list__icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-facebook-1">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join-list__item">
+                            <a class="join-list__link" href="">
+                                <svg class="join-list__icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        
+        
+                <form name="subscribe" class="form-subscribe">
+                    <p class="form-subscribe__text">Подпишитесь на рассылку</p>
+                    <div class="form-subscribe__container">
+                        <label for="subscribe" class="form-subscribe__label"></label>
+                        <input class="form-subscribe__input" type="email" id="subscribe" name="subscribe" placeholder="E-mail">
+                        <button class="form-subscribe__button" type="submit">Подписаться
+                            <svg class="form-subscribe__icon" width="24" height="24">
+                                <use href="./images/icons.svg#telegram"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+        
+            </div>
+        </footer>
+</body>
+
+</html>
