@@ -25,6 +25,9 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 body {
@@ -46,10 +49,25 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .btn {
@@ -409,7 +427,7 @@ body {
 }
 
 .section-hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero-desktop.jpg);
   background-position: center;
   background-repeat: no-repeat;
   max-width: 1600;
@@ -452,8 +470,13 @@ body {
 
 .features-list {
   list-style: none;
-  display: flex;
-  margin-left: -30px;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .features-list {
+    display: flex;
+    margin-left: -30px;
+  }
 }
 .features-list__item {
   flex-basis: calc(25% - 30px);
@@ -488,6 +511,11 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--header-background-color);
+}
+@media screen and (max-width: 1199px) {
+  .section-work {
+    display: none;
+  }
 }
 .section-work__title {
   margin-bottom: 50px;
@@ -526,31 +554,52 @@ body {
 }
 
 .section-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--secondary-main-background-color);
 }
+@media screen and (min-width: 1200px) {
+  .section-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .section-team__title {
+  margin-bottom: 30px;
   text-align: center;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--basic-color-text);
+}
+@media screen and (min-width: 1200px) {
+  .section-team__title {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 .section-team__list {
   list-style: none;
   display: flex;
-}
-.section-team__item:not(:last-child) {
-  margin-right: 30px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .section-team__item {
-  width: 270px;
-  height: 428px;
-  margin-top: 50px;
+  width: calc((100% - 30px) / 2);
   background-color: var(--header-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .section-team__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-team__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .card {
@@ -621,36 +670,55 @@ body {
 }
 
 .section-clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .section-clients__title {
-  font-size: 36px;
-  line-height: 1.17;
+  margin-bottom: 30px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--basic-color-text);
-  margin-bottom: 50px;
+  font-size: 28px;
+  line-height: 1.18;
+}
+@media screen and (min-width: 1200px) {
+  .section-clients__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .clients-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .clients-list__item {
-  width: 170px;
+  width: calc((100% - 30px) / 2);
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-list__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .clients-list__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-list__item {
+    width: calc((100% - 150px) / 6);
+  }
 }
 .clients-list__link {
   display: flex;
