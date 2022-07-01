@@ -458,53 +458,62 @@ body {
   margin: 0 auto;
 }
 
-.features-list__container {
-  width: 270px;
+.section-features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--header-background-color);
+}
+@media screen and (min-width: 1200px) {
+  .section-features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.features-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .features-list__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features-list__item {
+    width: calc((100% - 90px) / 4);
+  }
+}
+.features-list .features-list__container {
   height: 120px;
   margin-bottom: 30px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   background-color: var(--secondary-main-background-color);
   align-items: center;
 }
-
-.features-list {
-  list-style: none;
-  width: 100%;
-}
-@media screen and (min-width: 1200px) {
-  .features-list {
-    display: flex;
-    margin-left: -30px;
-  }
-}
-.features-list__item {
-  flex-basis: calc(25% - 30px);
-  max-width: 270px;
-  margin-left: 30px;
-}
 .features-list__title {
   margin-bottom: 10px;
-  max-width: 270px;
+  text-align: center;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--basic-color-text);
 }
+@media screen and (min-width: 768px) {
+  .features-list__title {
+    text-align: left;
+  }
+}
 .features-list__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-color-text);
-}
-.features-list__item:nth-child(n+2) {
-  margin-left: 30px;
-}
-
-.section-features {
-  padding-top: 94px;
-  background-color: var(--header-background-color);
 }
 
 .section-work {
@@ -586,7 +595,7 @@ body {
   gap: 30px;
 }
 .section-team__item {
-  width: calc((100% - 30px) / 2);
+  width: calc((100% - 30px) / 1);
   background-color: var(--header-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
