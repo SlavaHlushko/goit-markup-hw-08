@@ -2,16 +2,17 @@
     background-color: var(--header-background-color);
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    // justify-content: center;
+    // margin-bottom: 50px;
+    margin-bottom: 40px;
+    column-gap: 8px;
+    row-gap: 15px;
+    @include tablet {
     justify-content: center;
-    margin-bottom: 50px;
-
-    &__item {
-        margin-left: 8px;
+    margin-bottom: 30px;
     }
 
-    &__item:first-child {
-        margin-left: 0px;
-    }
 
     &__button {
         padding: 6px 22px 6px 22px;
@@ -56,29 +57,47 @@
 
 
 .section-projects {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include desktop {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
     background-color: var(--header-background-color);
 }
 
 .project-list {
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-    margin-bottom: -30px;
+    // display: flex;
+    // flex-wrap: wrap;
+    // margin-left: -30px;
+    // margin-bottom: -30px;
+    column-gap: 30px;
+
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
     &__item {
         position: relative;
-
-        flex-basis: calc(100% / 3 - 33px);
-        margin-left: 30px;
-        margin-bottom: 30px;
+        
+        // flex-basis: calc(100% / 3 - 33px);
+        // margin-left: 30px;
+        // margin-bottom: 30px;
 
         transition-property: box-shadow;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+        @include tablet {
+            width: calc((100% - 30px) / 2);
+        }
+        @include desktop {
+            width: calc((100% - 60px) / 3);
+        }
     }
 
     &__item:hover .project-wrap__text {
