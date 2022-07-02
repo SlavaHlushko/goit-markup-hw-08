@@ -4,11 +4,48 @@
     padding-bottom: 60px;
 }
 
+.footer__container {
+    text-align: center;
+    @include tablet {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    @include tablet {
+        flex-wrap: wrap;
+
+    }
+    @include desktop {
+        display: flex;
+        align-items: baseline;
+    }
+
+
+
+}
+
+
 .footer-adress {
-    width: 231px;
+
+    margin-bottom: 60px;
+
+    @include tablet {
+        min-width: 232px;
+    }
+
+@include desktop {
+    min-width: 231px;
+    }
+     
     &__location {
             margin-top: 20px;
+            margin-bottom: 8px;
+
+            @include desktop {
             margin-bottom: 9px;
+            }
+            
 
             @include font(14px, null, 1.71);
             letter-spacing: 0.03em;
@@ -41,7 +78,11 @@
     
     
         &__item {
-            margin-bottom: 9px;
+            margin-bottom: 8px;
+            @include desktop {
+                margin-bottom: 9px;
+            }
+            
     
         }
 }
@@ -52,20 +93,30 @@
     margin-right: 10px;
 }
 
-.footer__container {
-    display: flex;
-    align-items: baseline;
-}
+
 
 .container-join {
-    width: 206px;
-    margin-left: 70px;
+
+
+    @include tablet {
+        min-width: 206px;
+        margin-left: 165px;
+    }
+
+    @include desktop {
+        min-width: 206px;
+        margin-left: 70px;
+    }
     &__text {
         @include font(14px, 700, 1.14);
 
             letter-spacing: 0.03em;
             text-transform: uppercase;
             color: var(--header-background-color);
+
+            @include desktop {
+                text-align: left;
+            }
         }
 }
 
@@ -93,6 +144,20 @@
         }
 }
 
+.join-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+    &__item {
+        margin-top: 20px;
+        margin-bottom: 60px;
+        @include desktop {
+        margin-bottom: 30px;
+        }
+       
+    }
+}
 
 
 .join-list__icon {
@@ -100,12 +165,30 @@
 }
 
 .form-subscribe__container {
-    display: flex;
-    margin-top: 20px;
 
-    height: 50px;
-    margin-left: 93px;
+    @include desktop {
+        display: flex;
+        margin-top: 20px;
+            
+        height: 50px;
+        margin-left: 93px;
+
+    }
+
 }
+.form-subscribe {
+    text-align: center; 
+
+    @include tablet {
+
+        min-width: 450px;
+    }
+
+    @include desktop {
+        min-width: 570px;
+    }
+}
+
 
 .form-subscribe__label {
     display: flex;
@@ -118,9 +201,9 @@
 }
 
 .form-subscribe__input {
-
-    padding-left: 16px;
-    width: 358px;
+        width: 100%;
+        height: 50px;
+        margin-bottom: 20px;
 
     @include font(16px, null, 1.25);
 
@@ -130,15 +213,29 @@
     border-radius: 4px;
     background-color: var(--hero-footer-background-color);
 
+    @include tablet {
+        width: 450px;
+    }
+
+    @include desktop {
+        padding-left: 16px;
+        width: 358px;
+    }
 }
 
 .form-subscribe__input::placeholder {
+padding-left: 16px;
     @include font(16px, null, 1.25);
 
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
 
+.form-subcribe_container-button {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
 .form-subscribe__button {
     display: flex;
     align-items: center;
@@ -164,15 +261,20 @@
 }
 
 .form-subscribe__text {
-    margin-left: 93px;
-
+    margin-bottom: 20px;
     @include font(14px, 700, 1.14);
 
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--header-background-color);
+
+    @include desktop {
+        margin-left: 93px;
+        text-align: left;
+        }
 }
 
 .form-subscribe__icon {
     margin-left: 10px;
 }
+
