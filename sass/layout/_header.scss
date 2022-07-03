@@ -257,6 +257,7 @@
     margin-top: 64px;
     list-style: none;
 
+
     
     &__link {
         @include font (18px, 500, 1.22);
@@ -264,4 +265,24 @@
         color: #2196F3;
         text-decoration: none;
     }
+
+    &__item:not(:last-child) {
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+
+    &__text {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    &__text-first {
+        margin-right: 10px;
+        margin-left: 0px;
+    }
+
+    &__text-second {
+        margin-right: 0px;
+        margin-left: 10px;
+    }
+    
 }
