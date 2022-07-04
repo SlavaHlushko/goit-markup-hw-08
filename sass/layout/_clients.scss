@@ -27,7 +27,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-
         &__item {
             
             width: calc((100% - 30px) / 2);
@@ -46,6 +45,7 @@
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         }
+
     
         &__link {
             display: flex;
@@ -83,6 +83,7 @@
             outline: transparent;
         }
 }
+
 
 
 
