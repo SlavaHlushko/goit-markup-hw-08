@@ -4,12 +4,14 @@
         }
     padding-top: 16px;
     padding-bottom: 16px;
-
-    // padding-top: 24px;
-    // padding-bottom: 32px;
+    
     border-bottom: 1px solid #ECECEC;
 
-    background-color: var(--header-background-color)
+    background-color: var(--header-background-color);
+    @include desktop {
+        padding-top: 24px;
+        padding-bottom: 32px;
+    }
     }
 
 .logo--header-color {
@@ -24,10 +26,15 @@
 
 
 .header-list {
+    display: none;
+
+    
+
+    @include tablet {
     display: flex;
     list-style: none;
     align-items: center;
-    display: none;
+    }
 
     &__item {
             position: relative;
@@ -90,10 +97,20 @@
 }
 
 .contact-list {
-    display: flex;
-    list-style: none;
-    align-items: center;
     display: none;
+
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        align-items: center;
+    }
+
+    @include desktop {
+        display: flex;
+        list-style: none;
+        align-items: center;  
+    }
     &__mail,
     &__tel {
         font-family: 'Roboto', sans-serif;
@@ -145,6 +162,9 @@
         border: transparent;
         cursor: pointer;
         background-color: transparent;
+        @include desktop {
+            display: none;
+        }
         }
 
     &__mail:hover,
@@ -195,11 +215,13 @@
 
     &__button {
         display: block;
+
         margin-left: auto;
 
         border: transparent;
         cursor: pointer;
         background-color: transparent;
+
     }
     &__button:hover,
     &__button:focus {

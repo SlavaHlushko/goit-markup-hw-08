@@ -23,7 +23,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    min-width: auto;
+    min-width:auto;
     min-height: auto;
 
     // min-width: 528px;
@@ -78,12 +78,15 @@
     padding-bottom: 40px;
 
     &__text {
-        @include font(20px, 700, 1.15);
+        @include font(20px, 700, 1.5);
+
         margin-bottom: 12px;
 
         text-align: center;
         letter-spacing: 0.03em;
-        color: var(--basic-color-text)
+        color: var(--basic-color-text);
+        @include desktop{
+            @include font(20px, 700, 1.15);}
         }
 
 }
@@ -187,16 +190,25 @@
     margin-top: 20px;
     margin-bottom: 40px;
     width: 100%;
-
-    @include font(14px, null, 1.71);
+    @include mobile {
+    @include font(12px, null, 1.17);}
     letter-spacing: 0.03em;
     color: #757575;
+
+    @include desktop {
+        @include font(14px, null, 1.71);}
+    
     &__link {
         margin-left: 5px;
-        @include font(14px, null, 1.71);
+        @include mobile {
+        @include font(12px, null, 1.17);}
+
+
         letter-spacing: 0.03em;
         color: #2196F3;
-    
+        @include desktop {
+            @include font(14px, null, 1.71);
+        }
     }
 }
 
