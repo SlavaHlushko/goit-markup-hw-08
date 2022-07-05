@@ -273,7 +273,7 @@ body {
   }
 }
 .checkbox__link {
-  margin-left: 5px;
+  text-decoration: underline;
   letter-spacing: 0.03em;
   color: #2196F3;
 }
@@ -472,6 +472,9 @@ body {
     line-height: 1.14;
   }
 }
+.contact-list__mail:hover, .contact-list__mail:focus, .contact-list__tel:hover, .contact-list__tel:focus {
+  color: #2196F3;
+}
 .contact-list__mail {
   display: flex;
   flex-direction: row-reverse;
@@ -482,6 +485,11 @@ body {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #757575;
+}
+.contact-list__mail:hover .contact-list__icon, .contact-list__mail:focus .contact-list__icon, .contact-list__tel:hover .contact-list__icon, .contact-list__tel:focus .contact-list__icon {
+  fill: #2196F3;
+  outline: transparent;
 }
 .contact-list__tel {
   display: flex;
@@ -498,11 +506,6 @@ body {
   .contact-list__button {
     display: none;
   }
-}
-.contact-list__mail:hover, .contact-list__mail:focus, .contact-list__tel:hover, .contact-list__tel:focus, .contact-list__icon:hover, .contact-list__icon:focus, .contact-list__button:hover, .contact-list__button:focus {
-  color: #2196F3;
-  fill: #2196F3;
-  outline: transparent;
 }
 
 .current {

@@ -141,7 +141,12 @@
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+         color: #2196F3;
+         }
         }
+       
     
     &__mail {
         display: flex;
@@ -155,8 +160,17 @@
         transition-property: fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        // fill: #757575;
+        fill: #757575;
+
+        .contact-list__mail:hover &,
+        .contact-list__mail:focus &,
+        .contact-list__tel:hover &, 
+        .contact-list__tel:focus &{
+            fill: #2196F3;
+            outline: transparent;
         }
+        }
+
     
     
     
@@ -179,19 +193,6 @@
         }
 
 
-&__mail:hover,
-&__mail:focus,
-&__tel:hover,
-&__tel:focus,
-&__icon:hover,
-&__icon:focus,
-&__button:hover,
-&__button:focus{
-
- color: #2196F3;
-fill: #2196F3;
- outline: transparent;
- }
 
 }
 
