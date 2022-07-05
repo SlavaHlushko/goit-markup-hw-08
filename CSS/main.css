@@ -625,6 +625,7 @@ body {
 
 .section-hero {
   background-size: cover;
+  max-width: 1600px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mobile1x.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -637,7 +638,8 @@ body {
 @media screen and (min-width: 768px) {
   .section-hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet.jpg);
-    max-width: 1199px;
+    max-width: 1600px;
+    max-width: 1600px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -742,7 +744,6 @@ body {
 .features-list .features-list__container {
   height: 120px;
   margin-bottom: 30px;
-  margin-top: 30px;
   display: flex;
   justify-content: center;
   background-color: var(--secondary-main-background-color);
@@ -770,7 +771,6 @@ body {
 }
 
 .section-work {
-  padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--header-background-color);
 }
@@ -849,7 +849,6 @@ body {
   gap: 30px;
 }
 .section-team__item {
-  margin-bottom: 30px;
   background-color: var(--header-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -1030,9 +1029,6 @@ body {
   }
 }
 
-.footer-adress {
-  margin-bottom: 60px;
-}
 @media screen and (min-width: 768px) {
   .footer-adress {
     min-width: 232px;
@@ -1041,6 +1037,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-adress {
     min-width: 231px;
+    text-align: left;
   }
 }
 .footer-adress__location {
@@ -1287,6 +1284,11 @@ body {
     margin-bottom: 30px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .btn-list {
+    margin-bottom: 50px;
+  }
+}
 .btn-list__button {
   padding: 6px 22px 6px 22px;
   max-width: 200px;
@@ -1347,6 +1349,7 @@ body {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project-list__item {
+  width: 100%;
   position: relative;
   transition-property: box-shadow;
   transition-duration: 250ms;

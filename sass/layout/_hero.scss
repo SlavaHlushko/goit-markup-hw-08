@@ -1,5 +1,6 @@
 .section-hero {
 background-size: cover;
+max-width: 1600px;
     background-image:
         linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
@@ -18,6 +19,7 @@ background-size: cover;
                 linear-gradient(rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
                     url(../images/hero/hero-tablet.jpg);
+                    max-width: 1600px;
 
                 @include retina {
                          background-image:
@@ -25,7 +27,7 @@ background-size: cover;
                                 rgba(47, 48, 58, 0.4)),
                             url(../images/hero/hero-tablet2x.jpg);
                         }
-                max-width: 1199px;
+                max-width: 1600px;
         }
                  @include desktop {
                      background-image:
@@ -48,6 +50,7 @@ background-size: cover;
     }
 
     &__container {
+
             padding-top: 118px;
             padding-bottom: 118px;
             display: flex;

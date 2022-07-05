@@ -33,7 +33,7 @@
         }
 
     &__item {
-            margin-bottom: 30px;
+
 
             @include tablet {
             width: calc((100% - 30px) / 2);
@@ -41,8 +41,7 @@
             @include desktop {
             width: calc((100% - 90px) / 4);
             }
-            // width: 270px;
-            // height: 92px;
+
 
     
             background-color: var(--header-background-color);
