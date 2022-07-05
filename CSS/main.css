@@ -585,6 +585,10 @@ body {
   text-decoration: none;
 }
 
+.actual {
+  color: #2196F3;
+}
+
 .mobile-soc-list {
   display: flex;
   margin-top: 64px;
