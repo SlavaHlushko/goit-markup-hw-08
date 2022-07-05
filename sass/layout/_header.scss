@@ -120,9 +120,6 @@
         list-style: none;
         align-items: center;  
     }
-    &__item {
-
-    }
 
 
     &__mail,
@@ -158,7 +155,7 @@
         transition-property: fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        
+        // fill: #757575;
         }
     
     
@@ -168,13 +165,6 @@
         flex-direction: row-reverse;
         }
   
-    &__icon:hover,
-    &__icon:focus {
-        
-        color: #2196F3;
-        fill: #2196F3;
-        outline: transparent;
-     }
 
     &__button {
         display: block;
@@ -188,24 +178,22 @@
         }
         }
 
-    &__mail:hover,
-    &__mail:focus,
-    &__tel:hover,
-    &__tel:focus,
-    &__icon:hover,
-    &__icon:focus,
-    &__button:hover,
-    &__button:focus{
 
-    color: #2196F3;
-    fill: #2196F3;
-    outline: transparent;
+&__mail:hover,
+&__mail:focus,
+&__tel:hover,
+&__tel:focus,
+&__icon:hover,
+&__icon:focus,
+&__button:hover,
+&__button:focus{
+
+ color: #2196F3;
+fill: #2196F3;
+ outline: transparent;
+ }
+
 }
-
-
-
-}
-
 
 .current {
     color: #2196F3;
@@ -299,14 +287,23 @@ color: #2196F3;
     margin-top: 64px;
     list-style: none;
 
+    &__item:not(:last-child) {
+        padding-right: 10px;
+        border-right: 1px solid rgba(33, 33, 33, .2);
+    }
+    &__item:not(:first-child) {
+        padding-left: 10px;
 
+    }
     
+
     &__link {
         @include font (18px, 500, 1.22);
         letter-spacing: 0.02em;
         color: #2196F3;
         text-decoration: none;
     }
+
 
     &__item:not(:last-child) {
         border-right: 1px solid rgba(33, 33, 33, 0.2);
@@ -317,14 +314,5 @@ color: #2196F3;
         margin-left: 10px;
     }
 
-    &__text-first {
-        margin-right: 10px;
-        margin-left: 0px;
-    }
-
-    &__text-second {
-        margin-right: 0px;
-        margin-left: 10px;
-    }
     
 }
