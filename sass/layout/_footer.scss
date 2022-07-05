@@ -33,11 +33,13 @@
 
     @include tablet {
         min-width: 232px;
+        margin-bottom: 60px;
     }
 
 @include desktop {
     min-width: 231px;
     text-align: left;
+    margin-bottom: 0px;
     }
      
     &__location {

@@ -1035,12 +1035,14 @@ body {
 @media screen and (min-width: 768px) {
   .footer-adress {
     min-width: 232px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-adress {
     min-width: 231px;
     text-align: left;
+    margin-bottom: 0px;
   }
 }
 .footer-adress__location {
